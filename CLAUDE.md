@@ -1,71 +1,74 @@
 # CLAUDE.md — tech-toolkit · Thiago Maranhão
 
-## Contexto do repositório
+## Language
 
-Repositório público de **Thiago Maranhão** (Software Architecture Manager) com artefatos técnicos extraídos de ambientes de produção real — templates, prompts e exemplos práticos nas áreas de **AI**, **sistemas distribuídos** e **arquitetura de software**.
+All content in this repository — documentation, README files, artifact descriptions, and AI-generated output — must be written in **English**. Code was always in English; now documentation follows the same rule.
 
-Os artefatos são referência técnica antes de serem conteúdo: cada um foi validado em contexto real antes de ser publicado. Muitos estão vinculados a posts no LinkedIn e Medium, mas o repositório serve por conta própria como fonte de consulta e reutilização.
+## Repository context
 
-O repositório é aberto para uso e contribuição da comunidade.
+Public repository by **Thiago Maranhão** (Software Architecture Manager) with engineering artifacts extracted from real production environments — templates, prompts, and practical examples across **AI**, **distributed systems**, and **software architecture**.
 
-## Estrutura
+Artifacts are technical references first, content second: each one was validated in a real context before being published. Many are linked to posts on LinkedIn and Medium, but the repository stands on its own as a reference and reuse source.
+
+Open for community use and contribution.
+
+## Structure
 
 ```
 /
-├── README.md                  # Apresentação do repositório e do autor
-├── adr/                       # Templates e instruções para Architecture Decision Records
-├── prompts/                   # Prompts reutilizáveis para ferramentas de AI (LLMs, Gems, etc.)
-├── claude-code/               # Skills e hooks para Claude Code
-├── dotnet/                    # Exemplos de código .NET/C# de produção
-└── distributed-systems/       # Padrões e exemplos de sistemas distribuídos
+├── README.md                  # Repository and author overview
+├── adr/                       # Templates and instructions for Architecture Decision Records
+├── prompts/                   # Reusable prompts for AI tools (LLMs, Gems, etc.)
+├── claude-code/               # Skills and hooks for Claude Code
+├── dotnet/                    # Production .NET/C# code examples
+└── distributed-systems/       # Distributed systems patterns and examples
 ```
 
-> A estrutura cresce conforme novos artefatos são publicados. Cada pasta representa um domínio técnico, não um tipo de arquivo.
+> The structure grows as new artifacts are published. Each folder represents a technical domain, not a file type.
 
-## Regras para novos artefatos
+## Rules for new artifacts
 
-- Cada pasta agrupa artefatos por **contexto/domínio**, não por tipo de arquivo
-- Todo artefato deve ser **originado ou validado em produção** — não é conteúdo teórico
-- Toda pasta deve ter um `README.md` com:
-  - O que é e para que serve
-  - Contexto de produção onde foi usado (sem expor dados sensíveis)
-  - Como usar
-  - Seção **"Origem e referências"** com links dos posts que originaram ou mencionam os artefatos
-- Artefatos devem ser autocontidos — quem chega pelo link do post deve conseguir usar sem contexto adicional
-- Linguagem dos artefatos: **português** para documentação, inglês para código
+- Each folder groups artifacts by **domain/context**, not by file type
+- Every artifact must be **originated or validated in production** — no purely theoretical content
+- Every folder must have a `README.md` with:
+  - What it is and what it's for
+  - Production context where it was used (without exposing sensitive data)
+  - How to use it
+  - **"Origin and references"** section with links to posts that originated or mention the artifacts
+- Artifacts must be self-contained — someone arriving from a post link should be able to use them without additional context
 
-## Ao criar uma nova pasta de artefatos
+## Adding a new artifact folder
 
-1. Criar a pasta com nome descritivo em kebab-case
-2. Criar o `README.md` com estrutura padrão (contexto, como usar, referências)
-3. Adicionar os artefatos
-4. Atualizar o `README.md` raiz com a nova pasta
+1. Create the folder with a descriptive kebab-case name
+2. Create the `README.md` with the standard structure (context, how to use, references)
+3. Add the artifacts
+4. Update the root `README.md` with the new folder
 
-## Convenção de commits
+## Updating an existing artifact
 
-Seguir [Conventional Commits](https://www.conventionalcommits.org/). Formato: `<tipo>(<escopo>): <descrição>`
+- Maintain backward compatibility when possible
+- If there's a breaking change, document what changed in the folder's `README.md`
+- Update the references section if new posts start mentioning the artifact
 
-O **escopo é obrigatório** e deve ser o nome da pasta do artefato (ex: `adr`, `prompts`, `dotnet`). Para mudanças que afetam o repositório como um todo, usar `repo`.
+## Commit convention
 
-**Tipos:**
-| Tipo | Quando usar |
+Follow [Conventional Commits](https://www.conventionalcommits.org/). Format: `<type>(<scope>): <description>`
+
+**Scope is mandatory** and must be the artifact folder name (e.g. `adr`, `prompts`, `dotnet`). For changes affecting the repository as a whole, use `repo`.
+
+**Types:**
+| Type | When to use |
 |------|-------------|
-| `feat` | Novo artefato ou nova funcionalidade em artefato existente |
-| `fix` | Correção em artefato existente |
-| `docs` | Mudança em README ou documentação |
-| `refactor` | Reorganização sem mudança de conteúdo ou comportamento |
-| `chore` | Manutenção geral (`.gitignore`, configs, renomeações) |
+| `feat` | New artifact or new functionality in an existing artifact |
+| `fix` | Correction in an existing artifact |
+| `docs` | Change in README or documentation |
+| `refactor` | Reorganization without content or behavior change |
+| `chore` | General maintenance (`.gitignore`, configs, renames) |
 
-**Exemplos:**
+**Examples:**
 ```
 feat(adr): add ADR template for distributed systems decisions
 docs(prompts): update README with Claude Code usage examples
 fix(dotnet): correct dependency injection example
 chore(repo): add .gitignore
 ```
-
-## Ao atualizar um artefato existente
-
-- Manter compatibilidade com versões anteriores quando possível
-- Se houver quebra, documentar o que mudou no `README.md` da pasta
-- Atualizar a seção de referências se novos posts passarem a mencionar o artefato
