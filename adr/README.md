@@ -8,14 +8,16 @@ A collection of artifacts for generating Architecture Decision Records (ADRs) wi
 
 | File | Description |
 |------|-------------|
-| [`gem-instructions.md`](gem-instructions.md) | Instructions that configure the Gemini Pro Gem as an ADR generator |
-| [`template-adr.md`](template-adr.md) | ADR template consumed by the Gem to produce structured decisions |
+| [`template-adr.md`](template-adr.md) | ADR template used by all AI assistants to produce structured decisions |
+| [`gem-instructions.md`](gem-instructions.md) | Instructions to configure a Gemini Pro Gem as an ADR generator |
+| [`claude-instructions.md`](claude-instructions.md) | Instructions to configure a Claude Project as an ADR generator |
+| [`chatgpt-instructions.md`](chatgpt-instructions.md) | Instructions to configure a ChatGPT Custom GPT as an ADR generator |
 | [`prompt-generate-adr.md`](prompt-generate-adr.md) | Standard prompt to trigger ADR generation right after a meeting or decision session |
 
 ## How to use
 
-1. Create a Gemini Pro Gem using the instructions in [`gem-instructions.md`](gem-instructions.md)
-2. Upload or paste [`template-adr.md`](template-adr.md) as the Gem's reference template
+1. Pick your AI tool and follow the corresponding instructions file to set up the assistant
+2. Upload [`template-adr.md`](template-adr.md) to the assistant's knowledge base
 3. After a meeting or decision session, use the prompt in [`prompt-generate-adr.md`](prompt-generate-adr.md) to generate a draft ADR
 4. Review, adjust, and commit the ADR to your repository
 
