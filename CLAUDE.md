@@ -41,6 +41,29 @@ O repositório é aberto para uso e contribuição da comunidade.
 3. Adicionar os artefatos
 4. Atualizar o `README.md` raiz com a nova pasta
 
+## Convenção de commits
+
+Seguir [Conventional Commits](https://www.conventionalcommits.org/). Formato: `<tipo>(<escopo>): <descrição>`
+
+O **escopo é obrigatório** e deve ser o nome da pasta do artefato (ex: `adr`, `prompts`, `dotnet`). Para mudanças que afetam o repositório como um todo, usar `repo`.
+
+**Tipos:**
+| Tipo | Quando usar |
+|------|-------------|
+| `feat` | Novo artefato ou nova funcionalidade em artefato existente |
+| `fix` | Correção em artefato existente |
+| `docs` | Mudança em README ou documentação |
+| `refactor` | Reorganização sem mudança de conteúdo ou comportamento |
+| `chore` | Manutenção geral (`.gitignore`, configs, renomeações) |
+
+**Exemplos:**
+```
+feat(adr): add ADR template for distributed systems decisions
+docs(prompts): update README with Claude Code usage examples
+fix(dotnet): correct dependency injection example
+chore(repo): add .gitignore
+```
+
 ## Ao atualizar um artefato existente
 
 - Manter compatibilidade com versões anteriores quando possível
