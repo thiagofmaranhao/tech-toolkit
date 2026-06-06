@@ -1,0 +1,50 @@
+name: New Artifact Suggestion
+description: Suggest a new topic, example, or artifact to add to the repository.
+labels: ["suggestion"]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      description: Which technical domain does this suggestion belong to?
+      options:
+        - AI / LLMs
+        - Distributed Systems
+        - Software Architecture
+        - .NET / C#
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Artifact title
+      description: Short name for the artifact you're suggesting (e.g. "Saga pattern example in .NET").
+      placeholder: e.g. Saga pattern example in .NET
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: Describe the engineering problem or use case this artifact would address.
+    validations:
+      required: true
+
+  - type: textarea
+    id: production
+    attributes:
+      label: Production context
+      description: Have you faced this in a real environment? Briefly describe the scenario (no sensitive data).
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References (optional)
+      description: Links to related posts, papers, or existing implementations that could inform this artifact.
+    validations:
+      required: false

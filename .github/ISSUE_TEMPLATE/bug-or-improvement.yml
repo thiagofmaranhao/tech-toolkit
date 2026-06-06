@@ -1,0 +1,54 @@
+name: Bug or Improvement
+description: Report an error or suggest an improvement to an existing artifact.
+labels: ["improvement"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Bug (something is wrong or broken)
+        - Improvement (something could be better)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: artifact
+    attributes:
+      label: Artifact
+      description: Which folder/artifact does this refer to?
+      options:
+        - adr/gem-instructions.md
+        - adr/template-adr.md
+        - adr/prompt-generate-adr.md
+        - prompts/
+        - claude-code/
+        - dotnet/
+        - distributed-systems/
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior
+      description: What is wrong or what could be improved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should it do or say instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Production context (optional)
+      description: If you tried this in a real environment, briefly describe what happened.
+    validations:
+      required: false
