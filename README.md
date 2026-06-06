@@ -31,8 +31,7 @@ Engineers and architects who want to skip the blank-page problem. Every artifact
 
 ## Contributing
 
-Found a bug in an artifact or want to improve it? Open a PR.
-
-Have a topic, example, or artifact you'd like to see here? Open an issue with your suggestion — production-grounded ideas are especially welcome.
+- Found a bug or want to improve an existing artifact? [Open a bug/improvement issue](../../issues/new?template=bug-or-improvement.yml) or submit a PR.
+- Have a topic, example, or artifact to suggest? [Open a suggestion issue](../../issues/new?template=new-artifact-suggestion.yml) — production-grounded ideas are especially welcome.
 
 The only rule: contributions must be grounded in real usage, not theory.
