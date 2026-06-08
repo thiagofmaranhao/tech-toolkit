@@ -24,3 +24,4 @@ A collection of artifacts for generating Architecture Decision Records (ADRs) wi
 ## Origin and references
 
 - Post: [De 4 horas para 10 minutos: como passei a criar ADRs com IA logo após a reunião](https://www.linkedin.com/posts/activity-7468730068161273856-VqqS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAGcx-4B68luVeo0Z18FVACS6U_EoiW3o4M) — Jun 5, 2026
+- Post: [tech-toolkit — repositório público com artefatos de engenharia extraídos de produção](https://www.linkedin.com/posts/activity-7469893522784169984-yqn1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAGcx-4B68luVeo0Z18FVACS6U_EoiW3o4M) — Jun 8, 2026
