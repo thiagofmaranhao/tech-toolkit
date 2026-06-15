@@ -16,7 +16,9 @@ Engineers and architects who want to skip the blank-page problem. Every artifact
 
 | Folder | Description |
 |--------|-------------|
-| [`adr/`](adr/) | Templates and Gem instructions for generating Architecture Decision Records with AI |
+| [`adr/`](adr/) | Templates and AI assistant instructions for generating Architecture Decision Records |
+| [`claude-code/`](claude-code/) | Skills for Claude Code |
+| [`cursor/`](cursor/) | Rules for Cursor |
 
 > More domains coming as new artifacts are published.
 
