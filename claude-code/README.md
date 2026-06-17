@@ -36,4 +36,4 @@ Then invoke it with `/generate-adr [brief decision summary]` or let Claude load 
 
 ## Origin and references
 
-- Post: [Skills de IA para ADRs: como uso o Claude Code para padronizar documentação técnica](#) — coming soon
+- Post: [Skills de IA para ADRs: como uso o Claude Code para padronizar documentação técnica](https://www.linkedin.com/posts/activity-7472686904489213952-6uEY) — Jun 16, 2026
